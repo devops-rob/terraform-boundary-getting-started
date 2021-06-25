@@ -11,7 +11,7 @@ EOT
 }
 
 module "boundary_starter_org" {
-  source = "../../"
+  source = "devops-rob/getting-started/boundary"
 
   login_account_password = "foofoofoo"
 }
