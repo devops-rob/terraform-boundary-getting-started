@@ -42,7 +42,7 @@ resource "boundary_role" "global_anon_listing" {
   scope_id = "global"
   grant_strings = [
     "id=*;type=auth-method;actions=list,authenticate",
-    "id=*;type=scope;actions=list,no-op",
+    "id=*;type=scope;actions=list,read",
     "id={{account.id}};actions=read,change-password"
   ]
   principal_ids = ["u_anon"]
